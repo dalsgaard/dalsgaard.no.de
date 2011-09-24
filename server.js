@@ -1,8 +1,11 @@
-var http = require("http");
+var express = require('express');
 
-http.createServer(function(req, res) {
-	res.writeHead(200, {"Content-Type": "text/plain"});
-	res.end("Hello World\n");
-}).listen(80, "0.0.0.0");
+var app = express.createServer();
+
+app.get('/', function(req, res){
+    res.send('Hellooo World');
+});
+
+app.listen(80, "0.0.0.0");
 
 console.log("Server running at http://0.0.0.0:80/");

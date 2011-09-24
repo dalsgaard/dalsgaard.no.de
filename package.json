@@ -4,5 +4,7 @@
 	"scripts": {
 		"start": "node server.js"
 	},
-	"dependencies": {}
+	"dependencies": {
+	  "express": "2.4.6"
+	}
 }
