@@ -26,6 +26,11 @@ app.get("/history/:page", function(req, res) {
   res.render("history/" + req.params.page, {layout: layout});
 });
 
+app.get("/xhr2/jp-sup", function(req, res) {
+  res.header('Access-Control-Allow-Origin', "*");
+  res.render("xhr2/jp-sup")
+});
+
 app.get("/xhr2/:page", function(req, res) {
   res.render("xhr2/" + req.params.page)
 });
