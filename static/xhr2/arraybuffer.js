@@ -15,7 +15,6 @@ window.onload = function() {
         var builder = new BlobBuilder();
         builder.append(this.response);
         var blob = builder.getBlob('image/jpeg');
-        alert(blob.constructor);
         var img = document.createElement('img');
         img.onload = function(e) {
           URL.revokeObjectURL(img.src);
