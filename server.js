@@ -12,17 +12,25 @@ app.configure(function(){
 
 app.set('view engine', 'jade');
 
-app.get('/', function(req, res){
+app.set('view options', {
+  layout: false
+});
+
+
+app.get("/", function(req, res) {
   res.send('Hellooo World');
 });
 
-app.get('/history/:page', function(req, res){
+app.get("/history/:page", function(req, res) {
   var layout = req.xhr ? false : "history/layout";
   res.render("history/" + req.params.page, {layout: layout});
 });
 
+app.get("/xhr2/:page", function(req, res) {
+  res.render("xhr2/" + req.params.page)
+});
 
-var port = 8340;
+var port = 80;
 
 app.listen(port, "0.0.0.0");
 
