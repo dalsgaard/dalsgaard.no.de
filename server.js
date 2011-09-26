@@ -39,6 +39,10 @@ app.get("/location/:page", function(req, res) {
   res.render("location/" + req.params.page)
 });
 
+app.get("/deviceorientation/:page", function(req, res) {
+  res.render("deviceorientation/" + req.params.page)
+});
+
 var port = 80;
 
 app.listen(port, "0.0.0.0");
