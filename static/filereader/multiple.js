@@ -1,0 +1,16 @@
+
+window.onload = function() {
+  
+  document.querySelector("input[type=file]").addEventListener('change', function() {
+    for (var i = 0; i < this.files.length; i++) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var img = document.createElement('img');
+        img.src = e.target.result;
+        document.querySelector(".images").appendChild(img);
+      }
+      reader.readAsDataURL(this.files[i]);
+    }
+  }, false);
+  
+}

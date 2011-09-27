@@ -31,16 +31,8 @@ app.get("/xhr2/jp-sup", function(req, res) {
   res.render("xhr2/jp-sup")
 });
 
-app.get("/xhr2/:page", function(req, res) {
-  res.render("xhr2/" + req.params.page)
-});
-
-app.get("/location/:page", function(req, res) {
-  res.render("location/" + req.params.page)
-});
-
-app.get("/deviceorientation/:page", function(req, res) {
-  res.render("deviceorientation/" + req.params.page)
+app.get("/:section/:page", function(req, res) {
+  res.render(req.params.section + "/" + req.params.page)
 });
 
 var port = 80;
