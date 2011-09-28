@@ -1,0 +1,19 @@
+!!! 5
+html
+  head
+    title Drag and Drop
+    script(src="../js/modernizr.js")
+    script(src="script.js")
+    link(rel='stylesheet', href="style.css")
+  body
+    header
+      h1 Drag and Drop
+    section
+      div
+        .car(draggable="true")
+          img(src="../images/cars/yellowcar.jpg", draggable="false")
+        .car(draggable="true")
+          img(src="../images/cars/greencar.jpg", draggable="false")
+        .car(draggable="true")
+          img(src="../images/cars/redcar.jpg", draggable="false")
+      .drop-zone

@@ -1,0 +1,18 @@
+
+.car {
+  display: inline-block;
+  padding: 5px;
+}
+
+.car.dragging {
+  opacity: 0.4;
+}
+
+.drop-zone {
+  min-height: 86px;
+  border: 1px solid lightgray;
+}
+
+.drop-zone.drag-hover {
+  border: 1px solid black;
+}
