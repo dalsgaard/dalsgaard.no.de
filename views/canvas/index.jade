@@ -1,0 +1,33 @@
+!!! 5
+html
+  head
+    title Canvas
+    script(src="../js/modernizr.js")
+    script(src="script.js")
+    link(rel='stylesheet', href="style.css")
+  body
+    header
+      h1 Canvas
+    section
+      .canvas
+        canvas(width=400, height=400)
+      ul.controls
+        li
+          button.begin-path Begin Path
+        li
+          button.close-path Close Path
+        li
+          button.fill Fill
+        li
+          button.stroke Stroke
+        li
+          button.clear Clear
+        li
+          label Fill Color
+          input.fill(type='color')
+        li
+          label Stroke Color
+          input.stroke(type='color')
+        li
+          input.line-width(type='range', min=0, max=10, step=1, value=1)
+        
