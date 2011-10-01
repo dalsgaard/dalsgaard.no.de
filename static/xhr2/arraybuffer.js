@@ -8,7 +8,7 @@ window.onload = function() {
   document.querySelector("button.load").addEventListener('click', function() {
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "jp-sup.jpg", true);
+    xhr.open('GET', "../images/sup/9-3.jpg", true);
     xhr.responseType = 'arraybuffer';
     xhr.onload = function(e) {
       if (this.status == 200) {

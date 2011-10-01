@@ -1,7 +1,7 @@
 
 window.onload = function() {
   
-  document.querySelector("input[type=file]").addEventListener('change', function() {
+  document.querySelector("input.multiple").addEventListener('change', function() {
     for (var i = 0; i < this.files.length; i++) {
       var reader = new FileReader();
       reader.onload = function(e) {

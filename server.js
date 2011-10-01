@@ -18,7 +18,7 @@ app.set('view options', {
 
 
 app.get("/", function(req, res) {
-  res.send('Hellooo World');
+  res.render("index");
 });
 
 app.get("/history/:page", function(req, res) {

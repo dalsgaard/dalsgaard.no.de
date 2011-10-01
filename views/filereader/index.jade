@@ -4,10 +4,13 @@ html
     title FileReader API
     script(src="../js/modernizr.js")
     script(src="script.js")
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
     link(rel='stylesheet', href="style.css")
   body
     header
       h1 FileReader API
     section
-      input(type='file')
-      .image
+      input.single(type='file')
+      input.multiple(type='file', multiple=true)
+      .images

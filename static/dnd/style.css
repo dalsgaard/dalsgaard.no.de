@@ -10,9 +10,16 @@
 
 .drop-zone {
   min-height: 86px;
-  border: 1px solid lightgray;
+  border: 3px solid #F3E067;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+div + .drop-zone {
+  margin-top: 50px;
 }
 
 .drop-zone.drag-hover {
-  border: 1px solid black;
+  border: 3px solid #3E2E17;
 }

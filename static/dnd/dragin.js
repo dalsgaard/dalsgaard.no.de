@@ -37,5 +37,9 @@ window.onload = function() {
     
     return false;
   }, false);
+
+  dropZone.addEventListener('click', function(e) {
+    this.innerHTML = "";
+  }, false);
   
 };

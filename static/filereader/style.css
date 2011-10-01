@@ -1,0 +1,8 @@
+
+.images {
+  margin-top: 40px;
+}
+
+.images img + img {
+  margin-left: 10px;
+}

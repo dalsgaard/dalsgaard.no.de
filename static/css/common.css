@@ -1,0 +1,80 @@
+
+body {
+  background-image: url("../images/retro.jpg");
+  color: #3E2E17;
+  font-family: Verdana, Helvetica;
+  font-size: 24px;
+  padding: 40px;
+  margin: 0;
+}
+
+body > header {
+  background-color: white;
+  border: 5px solid #3E2E17;
+  padding: 40px;
+  -moz-border-radius: 20px;
+  -moz-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+}
+
+body > section {
+  background-color: white;
+  border: 5px solid #3E2E17;
+  margin-top: 20px;
+  padding: 40px;
+  -moz-border-radius: 20px;
+  -moz-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+}
+
+body > footer {
+  background-color: white;
+  border: 5px solid #3E2E17;
+  margin-top: 20px;
+  padding: 40px;
+  -moz-border-radius: 20px;
+  -moz-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #C32F2D;
+  font-size: 48px;
+}
+
+article h1 {
+  font-size: 32px;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul + ul {
+  margin-left: 40px;
+}
+
+nav li + li {
+  margin-top: 30px;
+}
+
+a {
+  background-color: #F3E067;
+  color: #C32F2D;
+  padding: 5px;
+  text-decoration: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}

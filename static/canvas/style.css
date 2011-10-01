@@ -1,7 +1,15 @@
 
 canvas {
-  border: 1px solid black;
+  background-color: #F3E067;
+  margin: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 ul.controls {
+}
+
+label {
+  font-size: 14px;
 }

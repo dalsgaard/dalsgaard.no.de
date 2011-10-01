@@ -2,9 +2,11 @@
 html
   head
     title Canvas
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
+    link(rel='stylesheet', href="style.css")
     script(src="../js/modernizr.js")
     script(src="script.js")
-    link(rel='stylesheet', href="style.css")
   body
     header
       h1 Canvas
@@ -29,5 +31,6 @@ html
           label Stroke Color
           input.stroke(type='color')
         li
+          label Line Width
           input.line-width(type='range', min=0, max=10, step=1, value=1)
         

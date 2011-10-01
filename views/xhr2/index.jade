@@ -1,9 +1,22 @@
 !!! 5
 html
   head
-    title XHR2 - onload
-    script(src="script.js")
+    title XMLHttpRequest2
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
+    link(rel='stylesheet', href="style.css")
   body
+    header
+      h1 XMLHttpRequest2
     section
-      button.load Load
-      #content
+      nav
+        ul
+          li
+            a(href="onload") onload Event
+          li
+            a(href="cors") Cross-Origin Resource Sharing
+        ul
+          li
+            a(href="arraybuffer") ArrayBuffer
+          li
+            a(href="blob") Blob
