@@ -1,0 +1,12 @@
+
+label {
+  color: #C32F2D;
+}
+
+label + span {
+  margin-left: 20px;
+}
+
+section > div + div {
+  margin-top: 40px;
+}

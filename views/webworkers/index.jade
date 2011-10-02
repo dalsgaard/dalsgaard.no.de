@@ -1,7 +1,7 @@
 !!! 5
 html
   head
-    title WebSockets
+    title WebWorkers
     link(href="../css/html5reset.css", rel="stylesheet")
     link(rel='stylesheet', href="../css/common.css")
     link(rel='stylesheet', href="style.css")
@@ -9,16 +9,11 @@ html
     script(src="script.js")
   body
     header
-      h1 WebSockets
+      h1 WebWorkers
     section
-      .server
-        label URL
-        input(type='text')
-        button.connect Connect
-      .send
-        label Send
-        textarea.send
-        button.send Send
-      .received
-        label Received
-        ul
+      .time
+        label Time
+        span.time
+      .prime
+        label Prime
+        span.prime
