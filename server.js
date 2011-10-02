@@ -31,8 +31,12 @@ app.get("/xhr2/jp-sup", function(req, res) {
   res.render("xhr2/jp-sup")
 });
 
+app.get("/:section/same", function(req, res) {
+  res.render(req.params.section + "/index");
+});
+
 app.get("/:section/:page", function(req, res) {
-  res.render(req.params.section + "/" + req.params.page)
+  res.render(req.params.section + "/" + req.params.page);
 });
 
 var port = 80;

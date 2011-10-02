@@ -1,0 +1,49 @@
+
+section > div + div {
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+}
+
+input {
+  background-color: #C32F2D;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 6px;
+  width: 200px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+span {
+  font-size: 16px;
+  padding: 6px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+span.value, li > span:last-child {
+  background-color: #F3E067;
+}
+
+input + input, input + span {
+  margin-left: 20px;
+}
+
+li + li {
+  margin-top: 10px;
+}
+
+li > span:first-child {
+  background-color: #C32F2D;
+  color: white;
+}
+
+li > span + span {
+  margin-left: 10px;
+}

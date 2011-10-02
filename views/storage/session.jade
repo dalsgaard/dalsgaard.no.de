@@ -1,0 +1,29 @@
+!!! 5
+html
+  head
+    title Session Storage
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
+    link(rel='stylesheet', href="style.css")
+    script(src="../js/modernizr.js")
+    script(src="session.js")
+  body
+    header
+      h1 Session Storage
+    section
+      .set
+        input.key(type='text');
+        input.value(type='text');
+        button Set
+      .get
+        input.key(type='text');
+        span.value
+        button Get
+      .remove
+        input.key(type='text');
+        button Remove
+      .clear
+        button Clear
+      .all
+        button All
+        ul
