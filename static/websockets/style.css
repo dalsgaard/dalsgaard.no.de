@@ -1,0 +1,57 @@
+
+label {
+  margin-bottom: 5px;
+}
+
+input , textarea {
+  background-color: #C32F2D;
+  border: none;
+  color: white;
+  padding: 6px;
+  width: 400px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+label, input, textarea {
+  display: block;
+  font-size: 18px;
+}
+
+section > div {
+  margin-top: 20px;
+}
+
+.received > ul {
+  border: 3px solid #3E2E17;
+  height: 200px;
+  min-width: 380px;
+  overflow: auto;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.received ul > li {
+  font-size: 16px;
+  padding: 5px 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.received ul > li + li {
+  margin-top: 10px;
+}
+
+.received ul > li.client {
+  background-color: #F3E067;
+  color: #C32F2D;
+}
+
+.received ul > li.server {
+  background-color: #C32F2D;
+  color:  #F3E067;
+}
