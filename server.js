@@ -23,7 +23,7 @@ app.get("/", function(req, res) {
 
 app.get("/offline/:page", function(req, res) {
   var layout = req.xhr ? false : "offline/layout";
-  res.render("history/" + req.params.page, {layout: layout});
+  res.render("offline/" + req.params.page, {layout: layout});
 });
 
 app.get("/history/:page", function(req, res) {
