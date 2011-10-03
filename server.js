@@ -21,6 +21,11 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+app.get("/offline/:page", function(req, res) {
+  var layout = req.xhr ? false : "offline/layout";
+  res.render("history/" + req.params.page, {layout: layout});
+});
+
 app.get("/history/:page", function(req, res) {
   var layout = req.xhr ? false : "history/layout";
   res.render("history/" + req.params.page, {layout: layout});

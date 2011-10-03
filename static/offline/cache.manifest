@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# Version 2
+
+../js/modernizr.js
+script.js
+
+../css/html5reset.css
+../css/common.css
+style.css
+
+../images/retro.jpg
+
+NETWORK:
+../images/sup/
