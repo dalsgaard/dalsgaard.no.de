@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# Version 1
+
+../js/modernizr.js
+script.js
+
+../css/html5reset.css
+../css/common.css
+style.css
+
+../images/retro.jpg
+
+CACHE:
+jp-sup-waveboard-9-3
+../images/sup/9-3.jpg
+
+NETWORK:
+../images/sup/
+
+FALLBACK:
+/ offline
