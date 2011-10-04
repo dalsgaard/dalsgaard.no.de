@@ -28,7 +28,7 @@ app.get("/history/:page", function(req, res) {
 
 app.get("/xhr2/jp-sup", function(req, res) {
   res.header('Access-Control-Allow-Origin', "*");
-  res.render("xhr2/jp-sup")
+  res.render("xhr2/jp-sup");
 });
 
 app.get("/:section/same", function(req, res) {
