@@ -3,15 +3,15 @@ body {
   background-image: url("../images/retro.jpg");
   color: #3E2E17;
   font-family: Verdana, Helvetica;
-  font-size: 24px;
-  padding: 40px;
+  font-size: 18px;
+  padding: 25px;
   margin: 0;
 }
 
 body > header {
   background-color: white;
   border: 5px solid #3E2E17;
-  padding: 40px;
+  padding: 25px;
   -moz-border-radius: 20px;
   -moz-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
   -webkit-border-radius: 20px;
@@ -24,7 +24,7 @@ body > section {
   background-color: white;
   border: 5px solid #3E2E17;
   margin-top: 20px;
-  padding: 40px;
+  padding: 25px;
   -moz-border-radius: 20px;
   -moz-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
   -webkit-border-radius: 20px;
@@ -37,7 +37,7 @@ body > footer {
   background-color: white;
   border: 5px solid #3E2E17;
   margin-top: 20px;
-  padding: 40px;
+  padding: 25px;
   -moz-border-radius: 20px;
   -moz-box-shadow: 10px 10px 5px rgba(100, 100, 100, 0.5);
   -webkit-border-radius: 20px;
@@ -49,11 +49,11 @@ body > footer {
 h1 {
   text-align: center;
   color: #C32F2D;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 article h1 {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 ul {

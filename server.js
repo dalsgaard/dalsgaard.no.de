@@ -33,7 +33,7 @@ app.get("/history/:page", function(req, res) {
 
 app.get("/xhr2/jp-sup", function(req, res) {
   res.header('Access-Control-Allow-Origin', "*");
-  res.render("xhr2/jp-sup")
+  res.render("xhr2/jp-sup");
 });
 
 app.get("/:section/same", function(req, res) {
@@ -45,9 +45,12 @@ app.get("/:section/:page", function(req, res) {
 });
 
 var port = 8340;
+<<<<<<< HEAD
 app.configure('production', function() {
   port = 80;
 });
+=======
+>>>>>>> 34aeaf59130cec83db94614cd21ab799e0ab06bd
 
 app.listen(port, "0.0.0.0");
 

@@ -1,6 +1,6 @@
 
 window.onload = function() {
-  
+
   var circle = document.querySelector("svg circle");
   circle.addEventListener('click', function(e) {
     alert("Circle clicked!");

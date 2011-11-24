@@ -13,7 +13,11 @@ html
     section
       svg(height='400', version='1.1', width='400', xmlns='http://www.w3.org/2000/svg')
         circle(cx='200', cy='200', fill='#F66', r='100', stroke='#000')
+          //
+            set(begin="click+1s", attributeName="fill", to="yellow")
         rect(fill='#66F', height='140', opacity='0.7', stroke='#000', width='180', x='10', y='10')
+          //
+            animate(begin="click", dur="1.0s", repeatCount="5", attributeName="fill", values="red; peachpuff; lightgoldenrodyellow; plum", fill="freeze")
     footer
       nav
         a(href="raphael") Raphael
