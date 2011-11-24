@@ -44,7 +44,7 @@ app.get("/:section/:page", function(req, res) {
   res.render(req.params.section + "/" + req.params.page);
 });
 
-var port = 80;
+var port = 8340;
 
 app.listen(port, "0.0.0.0");
 

@@ -3,7 +3,7 @@ require 'em-websocket'
 
 EventMachine.run {
 
-  EventMachine::WebSocket.start(:host => "localhost", :port => 8320) do |ws|
+  EventMachine::WebSocket.start(:host => "localhost", :port => 8325) do |ws|
     ws.onopen {
       puts "WebSocket connection open"
 

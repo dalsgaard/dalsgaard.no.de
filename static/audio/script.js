@@ -18,11 +18,11 @@ window.onload = function() {
 
   var time = document.querySelector("span.time");
   audio.addEventListener('timeupdate', function(e) {
-    time.innerHTML = Math.round(audio.currentTime);
+    time.innerHTML = Math.floor(audio.currentTime);
   }, false);
 
   audio.addEventListener('playing', function(e) {
-    document.querySelector("span.duration").innerHTML = Math.round(audio.duration);
+    document.querySelector("span.duration").innerHTML = Math.floor(audio.duration);
   }, false);
   
   

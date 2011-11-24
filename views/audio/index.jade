@@ -11,9 +11,11 @@ html
     header
       h1 The New Audio Tag
     section
-      audio(controls=true, preload="metadata", loop=true, autoplay=true)
+      audio(controls=true, preload="metadata", loop=true, autoplay=false)
         source(src="BradSucks.mp3")
-        source(src="BradSucks.ogg")
+        p Ups!
+        //
+          source(src="BradSucks.ogg")
       .controls
         button.play Play
         button.pause Pause
