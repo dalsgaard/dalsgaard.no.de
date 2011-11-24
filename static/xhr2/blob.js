@@ -11,7 +11,6 @@ window.onload = function() {
     xhr.onload = function(e) {
       if (this.status == 200) {
         var blob = this.response;
-        alert(blob.constructor);
         var img = document.createElement('img');
         img.onload = function(e) {
           URL.revokeObjectURL(img.src);

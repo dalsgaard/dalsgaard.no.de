@@ -11,13 +11,13 @@ html
     header
       h1 SVG
     section
-      svg(height='400', version='1.1', width='400', xmlns='http://www.w3.org/2000/svg')
-        circle(cx='200', cy='200', fill='#F66', r='100', stroke='#000')
-          //
-            set(begin="click+1s", attributeName="fill", to="yellow")
-        rect(fill='#66F', height='140', opacity='0.7', stroke='#000', width='180', x='10', y='10')
-          //
-            animate(begin="click", dur="1.0s", repeatCount="5", attributeName="fill", values="red; peachpuff; lightgoldenrodyellow; plum", fill="freeze")
+      svg(height='400', version='1.1', width='600', xmlns='http://www.w3.org/2000/svg')
+        circle.red(cx='200', cy='200', fill='#F66', r='100', stroke='#000')
+        rect.blue(fill='#66F', height='140', opacity='0.7', stroke='#000', width='180', x='10', y='10')
+        circle(cx='380', cy='150', fill='#6FF', r='120', stroke='#000', opacity='0.5')
+          set(begin="click+1s", attributeName="fill", to="yellow")
+        rect(fill='#6F6', height='140', opacity='0.7', stroke='#000', width='120', x='450', y='140')
+          animate(begin="click", dur="1.0s", repeatCount="3", attributeName="fill", values="red; peachpuff; lightgoldenrodyellow; plum", fill="freeze")
     footer
       nav
         a(href="raphael") Raphael

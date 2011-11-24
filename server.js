@@ -21,7 +21,13 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+app.get("/offline/index", function(req, res) {
+  res.header('Cache-Control', 'no-cache');
+  res.render("offline/index", {layout: false});
+});
+
 app.get("/offline/:page", function(req, res) {
+  res.header('Cache-Control', 'no-cache');
   var layout = req.xhr ? false : "offline/layout";
   res.render("offline/" + req.params.page, {layout: layout});
 });
@@ -42,6 +48,10 @@ app.get("/:section/same", function(req, res) {
 
 app.get("/:section/:page", function(req, res) {
   res.render(req.params.section + "/" + req.params.page);
+});
+
+app.get("/notification/notification", function(req, res) {
+  res.render("notification/notification", {layout: false});
 });
 
 var port = 8340;
