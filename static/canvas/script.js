@@ -1,5 +1,4 @@
 
-
 function clickPoint(canvas, event) {
   var box = canvas.getBoundingClientRect();
   var left = box.left + (box.width - canvas.width) / 2;
@@ -13,13 +12,21 @@ function clickPoint(canvas, event) {
 window.onload = function() {
 
   
-  var canvas = document.querySelector("canvas");
+  var canvas = document.querySelector("canvas.drawing");
   var context = canvas.getContext('2d');
+
+  var topCanvas = document.querySelector("canvas.top");
+  var topContext = topCanvas.getContext('2d');
+  topContext.globalAlpha = 0.5;
 
   var lineTo = true;
 
-  canvas.addEventListener('click', function(e) {
+  topCanvas.addEventListener('click', function(e) {
     var point = clickPoint(canvas, e);
+    topContext.beginPath();
+    topContext.moveTo(point.x, point.y);
+    topContext.arc(point.x, point.y, 10, 0, Math.PI * 2);
+    topContext.fill();
     if (lineTo) {
       context.lineTo(point.x, point.y);
     } else {
@@ -29,6 +36,7 @@ window.onload = function() {
   
   document.querySelector("button.begin-path").addEventListener('click', function(e) {
     context.beginPath();
+     topContext.clearRect(0, 0, canvas.width, canvas.height);
   }, false);
 
   document.querySelector("button.close-path").addEventListener('click', function(e) {
@@ -44,8 +52,8 @@ window.onload = function() {
   }, false);
 
   document.querySelector("button.clear").addEventListener('click', function(e) {
-    //canvas.width = canvas.width;
-    context.clearRect(0, 0, canvas.width, canvas.height);
+     context.clearRect(0, 0, canvas.width, canvas.height);
+     topContext.clearRect(0, 0, canvas.width, canvas.height);
   }, false);
 
   document.querySelector("input.fill").addEventListener('blur', function(e) {

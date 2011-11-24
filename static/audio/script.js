@@ -3,6 +3,9 @@ window.onload = function() {
   
   var audio = document.querySelector("audio");
   
+  var volume = document.querySelector("span.volume");
+  volume.innerHTML = Math.round(audio.volume * 10);
+
   document.querySelector("button.play").addEventListener('click', function(e) {
     audio.play();
   }, false);
@@ -14,6 +17,20 @@ window.onload = function() {
   document.querySelector("button.stop").addEventListener('click', function(e) {
     audio.pause();
     audio.currentTime = 0;
+  }, false);
+
+  document.querySelector("button.up").addEventListener('click', function(e) {
+    if (audio.volume <= 0.9) {
+      audio.volume += 0.1;
+      volume.innerHTML = Math.round(audio.volume * 10);
+    }
+  }, false);
+
+  document.querySelector("button.down").addEventListener('click', function(e) {
+    if (audio.volume >= 0.1) {
+      audio.volume -= 0.1;
+      volume.innerHTML = Math.round(audio.volume * 10);
+    }
   }, false);
 
   var time = document.querySelector("span.time");

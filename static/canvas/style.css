@@ -1,10 +1,20 @@
 
+div.canvas {
+  position: relative;
+	margin: 20px;
+}
+
 canvas {
   background-color: #F3E067;
-  margin: 20px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+}
+
+canvas.top {
+  background-color: rgba(0,0,0,0);
+  left: 0;
+  position: absolute;
 }
 
 ul.controls {

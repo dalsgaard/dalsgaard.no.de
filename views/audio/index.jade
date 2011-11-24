@@ -6,17 +6,27 @@ html
     link(rel='stylesheet', href="../css/common.css")
     link(rel='stylesheet', href="style.css")
     script(src="../js/modernizr.js")
-    script(src="script.js")
+    //- script(src="script.js")
   body
     header
       h1 The New Audio Tag
     section
-      audio(controls=true, preload="metadata", loop=true, autoplay=true)
+      //- preload="metadata"
+      //- loop=true
+      //- autoplay=true
+      audio(controls=true)
         source(src="BradSucks.mp3")
         source(src="BradSucks.ogg")
-      .controls
-        button.play Play
-        button.pause Pause
-        button.stop Stop
-        span.time
-        span.duration
+      //
+        .controls
+          button.play Play
+          button.pause Pause
+          button.stop Stop
+          button.down Down
+          span.volume
+          button.up Up
+          span.time
+          span.duration
+    footer
+      nav
+        a(href="http://auditri.mauriciosantos.net") Auditri (Mac only)

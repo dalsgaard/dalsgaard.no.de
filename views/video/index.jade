@@ -6,7 +6,7 @@ html
     link(rel='stylesheet', href="../css/common.css")
     link(rel='stylesheet', href="style.css")
     script(src="../js/modernizr.js")
-    script(src="script.js")
+    //- script(src="script.js")
   body
     header
       h1 The New Video Tag
@@ -14,4 +14,16 @@ html
       video(controls=true, width=600, poster="ZacBrown.jpg")
         source(src="Toes.mp4")
         source(src="Toes.ogv")
-        source(src="Toes.webm")
+      //
+        .controls
+          button.play Play
+          button.pause Pause
+          button.stop Stop
+          button.down Down
+          span.volume
+          button.up Up
+          span.time
+          span.duration
+    footer
+      nav
+        a(href="http://www.mirovideoconverter.com") Miro Video Converter
