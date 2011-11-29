@@ -1,0 +1,8 @@
+#content > section {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+#content ul {
+  margin: 20px 0;
+}

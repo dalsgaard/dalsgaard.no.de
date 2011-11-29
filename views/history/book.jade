@@ -1,7 +1,7 @@
 !!! 5
-html
+html(lang='en')
   head
-    title Notifications API
+    title History API
     script(src="../js/modernizr.js")
     script(src="script.js")
     link(href="../css/html5reset.css", rel="stylesheet")
@@ -9,10 +9,7 @@ html
     link(rel='stylesheet', href="style.css")
   body
     header
-      h1 Notifications API
+      h1 History API
     section
-      ul
-        li
-          button.notify Notify
-        li
-          button.connect Connect
+      #content
+        !{body}

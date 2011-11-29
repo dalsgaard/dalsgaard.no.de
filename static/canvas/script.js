@@ -56,16 +56,22 @@ window.onload = function() {
      topContext.clearRect(0, 0, canvas.width, canvas.height);
   }, false);
 
-  document.querySelector("input.fill").addEventListener('blur', function(e) {
+  var fillInput = document.querySelector("input.fill");
+  fillInput.addEventListener('blur', function(e) {
     context.fillStyle = this.value;
   }, false);
-    
-  document.querySelector("input.stroke").addEventListener('blur', function(e) {
+  fillInput.value = context.fillStyle;
+  
+  var strokeInput = document.querySelector("input.stroke");  
+  strokeInput.addEventListener('blur', function(e) {
     context.strokeStyle = this.value;
   }, false);
-    
-  document.querySelector("input.line-width").addEventListener('change', function(e) {
+  strokeInput.value = context.strokeStyle;
+  
+  var lineWidthInput = document.querySelector("input.line-width");  
+  lineWidthInput.addEventListener('change', function(e) {
     context.lineWidth = this.value;
   }, false);
+  lineWidthInput.value = context.lineWidth;
     
 };

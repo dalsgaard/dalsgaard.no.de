@@ -1,11 +1,13 @@
 
 div.canvas {
-  position: relative;
+  display: inline-block;
 	margin: 20px;
+  position: relative;
+  vertical-align: top;
 }
 
 canvas {
-  background-color: #F3E067;
+  background-color: #FFB5A5;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -18,8 +20,15 @@ canvas.top {
 }
 
 ul.controls {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
 }
 
 label {
   font-size: 14px;
+}
+
+ul.controls li + li {
+  margin-top: 10px;
 }

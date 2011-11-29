@@ -1,0 +1,21 @@
+!!! 5
+html
+  head
+    title Images on Canvas
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
+    link(rel='stylesheet', href="style.css")
+    script(src="../js/modernizr.js")
+    script(src="image.js")
+  body
+    header
+      h1 Images on Canvas
+    section
+      .canvas
+        canvas.drawing(width=400, height=400)
+      ul.controls
+        li
+          button.invert Invert
+    footer
+      nav
+        a(href="webworker") WebWorker

@@ -1,0 +1,14 @@
+
+div.canvas {
+  display: inline-block;
+}
+
+canvas {
+  background-color: #222222;
+}
+
+ul.controls {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}

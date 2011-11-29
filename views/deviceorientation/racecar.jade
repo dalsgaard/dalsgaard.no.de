@@ -1,18 +1,18 @@
 !!! 5
 html
   head
-    title Notifications API
-    script(src="../js/modernizr.js")
-    script(src="script.js")
+    title Race Car
     link(href="../css/html5reset.css", rel="stylesheet")
     link(rel='stylesheet', href="../css/common.css")
     link(rel='stylesheet', href="style.css")
+    script(src="../js/modernizr.js")
+    script(src="racecar.js")
   body
     header
-      h1 Notifications API
+      h1 Race Car
     section
-      ul
+      .canvas
+        canvas(width=300, height=600)
+      ul.controls
         li
-          button.notify Notify
-        li
-          button.connect Connect
+          button.run Run

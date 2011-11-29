@@ -16,9 +16,9 @@ html
         canvas.top(width=400, height=400)
       ul.controls
         li
-          button.begin-path Begin Path
+          button.begin-path Begin
         li
-          button.close-path Close Path
+          button.close-path Close
         li
           button.fill Fill
         li
@@ -33,5 +33,9 @@ html
           input.stroke(type='color')
         li
           label Line Width
-          input.line-width(type='range', min=0, max=10, step=1, value=1)
+          input.line-width(type='range', min=1, max=10, step=1, value=3)
+    footer
+      nav
+        a(href="animation") Animation
+        a(href="image") Image
         

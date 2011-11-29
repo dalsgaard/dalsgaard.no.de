@@ -22,18 +22,28 @@ app.get("/", function(req, res) {
 });
 
 app.get("/offline/index", function(req, res) {
-  res.header('Cache-Control', 'no-cache');
   res.render("offline/index", {layout: false});
 });
 
-app.get("/offline/:page", function(req, res) {
-  res.header('Cache-Control', 'no-cache');
+app.get("/offline/offline", function(req, res) {
   var layout = req.xhr ? false : "offline/layout";
-  res.render("offline/" + req.params.page, {layout: layout});
+  res.render("offline/offline", {layout: layout});
+});
+
+app.get("/offline/:page", function(req, res) {
+  var layout = req.xhr ? false : "offline/layout";
+  res.render("history/" + req.params.page, {layout: layout});
+});
+
+app.get("/history/index", function(req, res) {
+  res.header("Cache-control", "no-cache");
+  var layout = req.xhr ? false : "history/book";
+  res.render("history/contents", {layout: layout});
 });
 
 app.get("/history/:page", function(req, res) {
-  var layout = req.xhr ? false : "history/layout";
+  res.header("Cache-control", "no-cache");
+  var layout = req.xhr ? false : "history/book";
   res.render("history/" + req.params.page, {layout: layout});
 });
 
