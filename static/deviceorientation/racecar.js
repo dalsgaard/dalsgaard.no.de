@@ -35,7 +35,7 @@ var loop = function() {
     if (distance < total) {
       setTimeout("loop()", 1/fps * 1000);
     } else {
-      statusText.innerHTML = "Done!";    
+      statusText.innerHTML = "Win!";    
     }
   }
 };
