@@ -1,0 +1,20 @@
+!!! 5
+html
+  head
+    title Video and Canvas
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
+    link(rel='stylesheet', href="style.css")
+    script(src="../js/modernizr.js")
+    script(src="canvas.js")
+  body
+    header
+      h1 Video and Canvas
+    section
+      video(controls=true, width=320, poster="ZacBrown.jpg")
+        source(src="Toes.mp4")
+        source(src="Toes.ogv")
+      canvas(width=320, height=240)
+    footer
+      nav
+        a(href="http://www.mirovideoconverter.com") Miro Video Converter
