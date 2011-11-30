@@ -12,3 +12,9 @@ ul.controls {
   margin: 20px;
   vertical-align: top;
 }
+
+li.status {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
