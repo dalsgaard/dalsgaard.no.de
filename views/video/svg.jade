@@ -1,0 +1,26 @@
+!!! 5
+html
+  head
+    title Video and SVG
+    link(href="../css/html5reset.css", rel="stylesheet")
+    link(rel='stylesheet', href="../css/common.css")
+    link(rel='stylesheet', href="style.css")
+    script(src="../js/modernizr.js")
+    script(src="script.js")
+  body
+    header
+      h1 Video and SVG
+    section
+      video.masked(controls=true, width=640, poster="ZacBrown.jpg")
+        source(src="Toes.mp4")
+        source(src="Toes.ogv")
+      .controls
+        button.play Play
+        button.pause Pause
+        button.stop Stop
+        button.down Down
+        span.volume
+        button.up Up
+        span.time
+        span.duration
+
