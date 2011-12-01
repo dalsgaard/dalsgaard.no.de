@@ -21,6 +21,10 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+app.get("/geeknight", function(req, res) {
+  res.render("geeknight");
+});
+
 app.get("/offline/index", function(req, res) {
   res.render("offline/index", {layout: false});
 });

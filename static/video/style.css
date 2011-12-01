@@ -1,5 +1,14 @@
 
+div.controls {
+	margin-top: 10px;
+}
+
 canvas {
   background-color: #EFEFEF;
   margin-left: 20px;
+}
+
+video.masked {
+	mask: url("mask.svg#ellipse");
+	-webkit-mask: url("mask.svg");
 }
